@@ -9,7 +9,7 @@ const navigator = createStackNavigator(
   {
     initialRouteName: "Search",
     defaultNavigationOptions: {
-      title: "Foodify",
+      title: "Foodzilla",
     },
   }
 );
