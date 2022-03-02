@@ -16,7 +16,8 @@ const SearchScreen = () => {
   };
 
   return (
-    <View style={styles.background}>
+    // <View style={styles.background}>
+    <>
       <SearchBar
         text={searchQuery}
         onSearchQueryChange={setSearchQuery}
@@ -35,7 +36,8 @@ const SearchScreen = () => {
           results={filterResultsByPrice("$$$")}
         />
       </ScrollView>
-    </View>
+      {/* </View> */}
+    </>
   );
 };
 
