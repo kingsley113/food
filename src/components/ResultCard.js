@@ -1,10 +1,11 @@
 import React from "react";
 import { View, Image, Text, StyleSheet } from "react-native";
 
-const ResultCard = () => {
+const ResultCard = ({ result }) => {
+  const { name } = result;
   return (
     <View>
-      <Text>Result Card</Text>
+      <Text>{name}</Text>
     </View>
   );
 };
