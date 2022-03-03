@@ -10,6 +10,9 @@ import ResultCard from "./ResultCard";
 import { withNavigation } from "react-navigation";
 
 const ResultsList = ({ title, results, navigation }) => {
+  // Add check to return if no list items
+  if (!results.length) return null;
+
   return (
     <View style={styles.container}>
       <Text style={styles.header}>{title}</Text>
