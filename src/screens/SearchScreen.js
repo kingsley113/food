@@ -16,14 +16,12 @@ const SearchScreen = () => {
   };
 
   return (
-    // <View style={styles.background}>
     <>
       <SearchBar
         text={searchQuery}
         onSearchQueryChange={setSearchQuery}
         onQuerySubmit={() => searchApi(searchQuery)}
       />
-      <Text style={styles.text}>We have found {results.length} results</Text>
       {errorMessage ? <Text>{errorMessage}</Text> : null}
       <ScrollView>
         <ResultsList
@@ -36,7 +34,6 @@ const SearchScreen = () => {
           results={filterResultsByPrice("$$$")}
         />
       </ScrollView>
-      {/* </View> */}
     </>
   );
 };
@@ -44,7 +41,6 @@ const SearchScreen = () => {
 const styles = StyleSheet.create({
   background: {
     backgroundColor: "#fff",
-    // height: "100%",
     flex: 1,
   },
   text: {

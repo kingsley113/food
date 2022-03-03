@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { View, TextInput, StyleSheet } from "react-native";
 import { Feather } from "@expo/vector-icons";
 
@@ -27,11 +27,10 @@ const styles = StyleSheet.create({
     marginHorizontal: 10,
     flexDirection: "row",
     marginTop: 15,
+    marginBottom: 10,
   },
   textInput: {
     color: "#000",
-    // borderColor: "black",
-    // borderWidth: 1,
     flex: 1,
     fontSize: 20,
   },
